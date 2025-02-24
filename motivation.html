@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генератор цитат по тематике</title>
+    <link rel="stylesheet" href="motivation.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Генератор цитат по тематике</h1>
+        
+        <label for="category">Выбери тематику:</label>
+        <select id="category" onchange="saveCategory()">
+            <option value="Motivational">Мотивационные цитаты</option>
+            <option value="Love">Цитаты про любовь</option>
+            <option value="Philosophical">Философские цитаты</option>
+            <option value="Friendship">Цитаты про дружбу</option>
+            <option value="Life">Жизненные цитаты</option>
+            <option value="Happiness">Цитаты о счастье</option>
+            <option value="Success">Цитаты про успех</option>
+            <option value="Movie/book">Цитаты из фильмов/книг</option>
+            <option value="Time">Цитаты о времени</option>
+            <option value="Sarcastic/Cynical">Циничные и саркастические цитаты</option>
+        </select>
+        
+        <button id="get-quote">Получить цитату</button>
+        
+        <div id="quote" class="quote-box">Здесь появится цитата...</div>
+        
+        <button id="add-quote">Добавить свою цитату</button>
+        <button id="share-quote">Поделиться</button>
+    </div>
+
+    <script src="motivation.js"></script>
+</body>
+</html>
